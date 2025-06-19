@@ -1,0 +1,462 @@
+ body {
+      margin: 0;
+      height: auto;
+      background: linear-gradient(135deg,#200043, #735b8c, #a524ff, #2e005f);
+      background-size: 200% 200%;
+      animation: gradientMove 10s ease infinite;
+      color: aliceblue;
+      font-family: "poppins", sans-serif;
+    }
+
+    html {
+  scroll-behavior: smooth;
+}
+    
+
+    @keyframes gradientMove {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+ .navbar{ 
+    width: 539px;
+    height: 50px;
+    border-radius: 10px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    margin-left: 35px;
+    margin-bottom: 210px;
+    padding-left: 20px;
+    transition: top 0.3s ease;
+ }
+ .navbar-brand{
+  color: aliceblue;
+  font-weight: bold;
+  font-size: 30px;
+  margin-top: 5px;
+ }
+ .navbar-brand:hover{
+  color: aliceblue;
+  
+ }
+
+ #navbar.sticky {
+  z-index: 999;
+  background-color: #040008;
+  top: 0; /* ketika discroll, pindah ke atas */
+ }
+
+ h1{
+    font-weight: bold;
+ }
+
+
+
+ .container{
+    width: 100%;
+    height: auto;
+    background-color: #000000;
+    border-radius: 10px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    opacity: 80%;
+    margin-top: 0px;
+ }
+
+ span{
+    /* gradasi text */
+    background: linear-gradient(to right, #3E239D, #b84dff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+      /* Tambahan agar lebih compatible */
+    background-clip: text;
+    color: transparent;
+     /* gradasi text */
+ }
+ .header{
+    height: 20px;
+ }
+
+ .nav-item a{
+    color: aliceblue;
+    font-size: 6px;
+    text-decoration: none;
+ }
+
+ .nav-item a:hover{
+    background: linear-gradient(to right, #3E239D, #b84dff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+      /* Tambahan agar lebih compatible */
+    background-clip: text;
+    color: transparent;
+    font-size: 8px;
+    text-decoration: none;
+    font-weight: bold;
+ }
+
+ .navigasi{
+    margin-right: 5px;
+ }
+ .intro{
+    margin-top: 70px;
+    margin-left: 10px;
+ }
+
+
+ p{
+    font-size: 6px;
+    text-align: justify;
+    padding-right: 100px;
+    margin-bottom: 0px;
+ }
+
+ .btn-download {
+  display: inline-block;
+  height: 20px;
+  width: 90px;
+  font-size: 8px;
+  color: aliceblue;
+  text-align: center;
+  margin-top: 15px;
+  line-height: 20px;
+  border-radius: 6px;
+  font-weight: bold;
+  background: linear-gradient(to right, #3E239D, #b84dff);
+  text-decoration: none;
+  transition: 0.3s ease;
+  margin-left: 60px;
+}
+
+.btn-download:hover {
+  background: aliceblue;
+  color: #3E239D;
+}
+
+
+.media{
+  display: inline-block;
+  direction: none;
+  margin-left: 34px;
+}
+
+ .img-profil img {
+  image-rendering: optimizeQuality;
+  padding: 5px;
+  mix-blend-mode: normal;
+  filter: none;
+  box-shadow: 0 0 10px #7e25ba, 0 0 10px #010003;
+  filter: brightness(130%);
+  margin-left: 0px;
+}
+
+/* Default: tersembunyi sebelum di-scroll */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.8s ease-out;
+}
+
+/* Muncul ketika elemen masuk viewport */
+.fade-in.appear {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Animasi Fade In saat membuka halaman */
+  /* .fade-in {
+    animation: fadeInUp 1s ease-in-out both;
+  }
+
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  } */
+
+  /* Efek teks berubah (web designer, UI designer, dll) */
+  .changing-text {
+    font-weight: bold;
+    font-size: 19px;
+    background: linear-gradient(to right, #3E239D, #b84dff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    white-space: nowrap;
+    overflow: hidden;
+    
+    
+  }
+
+  
+  /* Gunakan pseudo-element ::after untuk isi teks dinamis */
+  .changing-text::after {
+    content: "Web Designer";
+    animation: changeText 12s steps(1) infinite;
+  }
+
+  @keyframes changeText {
+   
+    33%  { content: "UI Designer"; }
+    66%  { content: "Mobile Dev"; }
+    100% { content: "Web Designer"; }
+  }
+
+
+  /* -------Skills--------- */
+
+  .skills{
+    margin-top: 50px;
+  }
+
+  .skills .row .col-sm-4{
+    background: rgba(240, 248, 255, 0.8);
+    margin: 7px;
+    width: 150px;
+    height: 200px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #7e25ba, 0 0 10px #010003;
+  }
+
+  .skills .row .col-sm-4 h2{
+    font-size: 18px;
+    padding-top: 7px;
+    padding-bottom: 0px;
+    font-weight: bold;
+    /* gradasi text */
+    background: linear-gradient(to right, #3E239D, #b84dff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+      /* Tambahan agar lebih compatible */
+    background-clip: text;
+    color: transparent;
+     /* gradasi text */
+  }
+
+
+
+
+
+
+
+/* -----animasi ----*/
+.animasi{
+  margin-top: 50px;
+  margin-bottom: 40px;
+  margin-left: 150px;
+  background-color: rgba(240, 248, 255, 0.9);
+  border-radius: 10px;
+  width: 210px;
+}
+.animasi h1 span {
+  position: relative;
+  font-family: "Lato", sans-serif;
+  display: inline-block;
+  font-size: 2rem;
+  color: white;
+  animation: bounce 1.2s ease-in-out infinite;
+  text-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Delay per huruf */
+.animasi h1 span:nth-child(2) {
+  animation-delay: 0.1s;
+}
+.animasi h1 span:nth-child(3) {
+  animation-delay: 0.2s;
+}
+.animasi h1 span:nth-child(4) {
+  animation-delay: 0.3s;
+}
+.animasi h1 span:nth-child(5) {
+  animation-delay: 0.4s;
+}
+.animasi h1 span:nth-child(6) {
+  animation-delay: 0.5s;
+}
+
+/* Animasi bounce dengan transform */
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+    text-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+  }
+  50% {
+    transform: translateY(-20px);
+    text-shadow: 0 25px 15px rgba(0, 0, 0, 0.3);
+  }
+}
+
+
+
+
+
+
+
+
+  /* -----about------- */
+
+.about .row{
+  padding-bottom: 30px;
+}
+.logo1{
+  background-color: rgba(240, 248, 255, 0.1);
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-left: 100px;
+  margin-top: 20px;
+}
+
+.logo1 img{
+  margin-top: 10px;
+  width: 80px;
+  height: 80px;
+  padding-bottom: 0px;
+}
+
+.text1{
+  margin-right: 0px;
+  text-align: justify;
+}
+
+.text1 a{
+  margin-top: 0px;
+  margin-left: 40px;
+}
+
+
+
+.logo2{
+  background-color: rgba(240, 248, 255, 0.1);
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-right: 100px;
+  margin-top: 20px;
+}
+
+.logo2 img{
+  margin-top: 30px;
+  width: 80px;
+  height: 40px;
+  padding-bottom: 0px;
+}
+
+.text2{
+  margin-left: 70px;
+  text-align: justify;
+}
+
+.text2 a{
+  margin-top: 0px;
+  margin-left: 40px;
+}
+
+/* ----Contact----- */
+.contact{
+  height: auto;
+  width: 350;
+  margin: 0px;
+  border-radius: 10px;
+  background-color: rgba(211, 183, 242, 0.1);
+  margin-top: 50px;
+}
+
+.info{
+  width: 160px;
+  color: #200043;
+  background-color: aliceblue;
+  margin-left: 20px;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.info .row{
+  text-align: left;
+  margin-left: 1px;
+  font-size: 10px;
+}
+
+.location{
+  margin-left: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 8px;
+  text-align: left;
+  line-height: 20px;
+
+}
+
+.form-group{
+  text-align: left;
+  margin-left: 30px;
+  width: 250px;
+  font-size: 8px;
+}
+
+.form-control{
+  height: 10px;
+  font-size: 7px;
+  border-radius: 5px;
+}
+
+
+ button{
+  display: inline-block;
+  height: 20px;
+  width: 50px;
+  font-size: 8px;
+  color: aliceblue;
+  text-align: center;
+  line-height: 20px;
+  border-radius: 6px;
+  font-weight: bold;
+  background: linear-gradient(to right, #3E239D, #b84dff);
+  text-decoration: none;
+  transition: 0.3s ease;
+  margin-bottom: 20px;
+  border: 0;
+}
+
+button:hover {
+  background: aliceblue;
+  color: #3E239D;
+}
+
+
+footer .col{
+  font-size: 5px;
+}
+
+
+.kanan{
+  opacity: 0;
+  transform: translateX(-50px);
+  transition: all 0.8s ease-out;
+}
+
+.kiri{
+  opacity: 0;
+  transform: translateX(50px);
+  transition: all 0.8s ease-out;
+}
+
+.kiri.appear{
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.kanan.appear{
+  transform: translateY(0);
+  opacity: 1;
+}
