@@ -37,6 +37,7 @@
   font-weight: bold;
   font-size: 4rem;
   margin-top: 5px;
+  max-width: 100%;
  }
  .navbar-brand:hover{
   color: aliceblue;
