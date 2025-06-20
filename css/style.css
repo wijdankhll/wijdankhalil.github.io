@@ -20,20 +20,20 @@
     }
 
  .navbar{ 
-    width: 539px;
-    height: 50px;
+    width: 86.2%;
+    height: 15%;
     border-radius: 10px;
     border-bottom-right-radius: 0px;
     border-bottom-left-radius: 0px;
-    margin-left: 35px;
-    margin-bottom: 210px;
-    padding-left: 20px;
+    margin-left: 6.8%;
+    margin-bottom: 33%;
+    padding-left: 50px;
     transition: top 0.3s ease;
  }
  .navbar-brand{
   color: aliceblue;
   font-weight: bold;
-  font-size: 30px;
+  font-size: 4rem;
   margin-top: 5px;
  }
  .navbar-brand:hover{
@@ -57,11 +57,11 @@
     width: 100%;
     height: auto;
     background-color: #000000;
-    border-radius: 10px;
+    border-radius: 40px;
     border-bottom-right-radius: 0px;
     border-bottom-left-radius: 0px;
     opacity: 80%;
-    margin-top: 0px;
+    margin-top: 5%;
  }
 
  span{
@@ -81,8 +81,8 @@
 
  .nav-item a{
     color: aliceblue;
-    font-size: 6px;
     text-decoration: none;
+    margin-right: 50px;
  }
 
  .nav-item a:hover{
@@ -93,7 +93,7 @@
       /* Tambahan agar lebih compatible */
     background-clip: text;
     color: transparent;
-    font-size: 8px;
+    font-size: larger;
     text-decoration: none;
     font-weight: bold;
  }
@@ -101,34 +101,40 @@
  .navigasi{
     margin-right: 5px;
  }
+
+ h6{
+  font-size: 2.7rem;
+ }
  .intro{
-    margin-top: 70px;
-    margin-left: 10px;
+    margin-top: 10.5%;
+    margin-left: 50px;
  }
 
 
  p{
-    font-size: 6px;
+    margin-top: 20px;
+    font-size: 1rem;
     text-align: justify;
-    padding-right: 100px;
+    padding-right: 200px;
     margin-bottom: 0px;
  }
 
  .btn-download {
   display: inline-block;
-  height: 20px;
-  width: 90px;
-  font-size: 8px;
+  height:40px;
+  width: 20%;
+  font-size: 1rem;
   color: aliceblue;
   text-align: center;
-  margin-top: 15px;
+  margin-top: 40px;
   line-height: 20px;
-  border-radius: 6px;
+  border-radius: 15px;
   font-weight: bold;
   background: linear-gradient(to right, #3E239D, #b84dff);
   text-decoration: none;
   transition: 0.3s ease;
-  margin-left: 60px;
+  margin-left: 200px;
+  padding-top: 10px;
 }
 
 .btn-download:hover {
@@ -140,7 +146,8 @@
 .media{
   display: inline-block;
   direction: none;
-  margin-left: 34px;
+  margin-left: 23.5%;
+  margin-top: 10px;
 }
 
  .img-profil img {
@@ -185,7 +192,7 @@
   /* Efek teks berubah (web designer, UI designer, dll) */
   .changing-text {
     font-weight: bold;
-    font-size: 19px;
+    font-size: 3rem;
     background: linear-gradient(to right, #3E239D, #b84dff);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -213,20 +220,20 @@
   /* -------Skills--------- */
 
   .skills{
-    margin-top: 50px;
+    margin-top: 150px;
   }
 
   .skills .row .col-sm-4{
     background: rgba(240, 248, 255, 0.8);
     margin: 7px;
-    width: 150px;
-    height: 200px;
+    width: 34%5;
+    height: 100%;
     border-radius: 10px;
     box-shadow: 0 0 10px #7e25ba, 0 0 10px #010003;
   }
 
   .skills .row .col-sm-4 h2{
-    font-size: 18px;
+    font-size: 2rem;
     padding-top: 7px;
     padding-bottom: 0px;
     font-weight: bold;
@@ -249,18 +256,18 @@
 
 /* -----animasi ----*/
 .animasi{
-  margin-top: 50px;
+  margin-top: 150px;
   margin-bottom: 40px;
-  margin-left: 150px;
+  margin-left: 39.5%;
   background-color: rgba(240, 248, 255, 0.9);
   border-radius: 10px;
-  width: 210px;
+  width: 300px;
 }
 .animasi h1 span {
   position: relative;
   font-family: "Lato", sans-serif;
   display: inline-block;
-  font-size: 2rem;
+  font-size: 3rem;
   color: white;
   animation: bounce 1.2s ease-in-out infinite;
   text-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
@@ -307,26 +314,28 @@
 
 .about .row{
   padding-bottom: 30px;
+  padding-top: 50px;
 }
 .logo1{
   background-color: rgba(240, 248, 255, 0.1);
-  width: 100px;
-  height: 100px;
+  width: 300px;
+  height: 300px;
   border-radius: 50%;
-  margin-left: 100px;
+  margin-left: 150px;
   margin-top: 20px;
 }
 
 .logo1 img{
   margin-top: 10px;
-  width: 80px;
-  height: 80px;
+  width: 300px;
+  height: 280px;
   padding-bottom: 0px;
 }
 
 .text1{
   margin-right: 0px;
   text-align: justify;
+  font-size: 5rem;
 }
 
 .text1 a{
@@ -338,23 +347,24 @@
 
 .logo2{
   background-color: rgba(240, 248, 255, 0.1);
-  width: 100px;
-  height: 100px;
+  width: 300px;
+  height: 300px;
   border-radius: 50%;
-  margin-right: 100px;
+  margin-right: 200px;
   margin-top: 20px;
 }
 
 .logo2 img{
-  margin-top: 30px;
-  width: 80px;
-  height: 40px;
+  margin-top: 100px;
+  width: 250px;
+  height: 100px;
   padding-bottom: 0px;
 }
 
 .text2{
-  margin-left: 70px;
+  margin-left: 150px;
   text-align: justify;
+  font-size: 5rem;
 }
 
 .text2 a{
@@ -370,13 +380,17 @@
   border-radius: 10px;
   background-color: rgba(211, 183, 242, 0.1);
   margin-top: 50px;
+  padding: 30px;
 }
 
+.contact h3{
+  font-size: 3rem;
+}
 .info{
-  width: 160px;
+  width: 300px;
   color: #200043;
   background-color: aliceblue;
-  margin-left: 20px;
+  margin-left: 40px;
   padding: 5px;
   border-radius: 10px;
 }
@@ -384,42 +398,41 @@
 .info .row{
   text-align: left;
   margin-left: 1px;
-  font-size: 10px;
+  font-size: 20px;
 }
 
 .location{
-  margin-left: 20px;
+  margin-left: 40px;
   margin-top: 10px;
   margin-bottom: 10px;
-  font-size: 8px;
+  font-size: 1rem;
   text-align: left;
-  line-height: 20px;
+  line-height: 50px;
 
 }
 
 .form-group{
   text-align: left;
-  margin-left: 30px;
-  width: 250px;
-  font-size: 8px;
+  margin-left: 40px;
+  width: 450px;
+  font-size: 0.8rem;
 }
 
 .form-control{
-  height: 10px;
-  font-size: 7px;
-  border-radius: 5px;
+  height: 30px;
+  border-radius: 10px;
 }
 
 
  button{
   display: inline-block;
-  height: 20px;
-  width: 50px;
-  font-size: 8px;
+  height: 30px;
+  width: 80px;
+  font-size: 14px;
   color: aliceblue;
   text-align: center;
   line-height: 20px;
-  border-radius: 6px;
+  border-radius: 10px;
   font-weight: bold;
   background: linear-gradient(to right, #3E239D, #b84dff);
   text-decoration: none;
@@ -434,9 +447,7 @@ button:hover {
 }
 
 
-footer .col{
-  font-size: 5px;
-}
+
 
 
 .kanan{
