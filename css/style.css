@@ -20,15 +20,17 @@
     }
 
  .navbar{ 
-    width: 86.2%;
+    width: 86.9%;
     height: 15%;
     border-radius: 10px;
     border-bottom-right-radius: 0px;
     border-bottom-left-radius: 0px;
-    margin-left: 6.8%;
-    margin-bottom: 33%;
+    margin-left: 6.6%;
     padding-left: 50px;
     transition: top 0.3s ease;
+    position: absolute;
+    top: 100px;
+    z-index: 999;
  }
  .navbar-brand{
   color: aliceblue;
@@ -43,7 +45,8 @@
 
  #navbar.sticky {
   z-index: 999;
-  background-color: #040008;
+  position: fixed;
+  background-color: #1A0E24;
   top: 0; /* ketika discroll, pindah ke atas */
  }
 
@@ -82,7 +85,7 @@
  .nav-item a{
     color: aliceblue;
     text-decoration: none;
-    margin-right: 50px;
+    margin-right: 20px;
  }
 
  .nav-item a:hover{
@@ -106,7 +109,7 @@
   font-size: 2.7rem;
  }
  .intro{
-    margin-top: 10.5%;
+    margin-top: 200px;
     margin-left: 50px;
  }
 
@@ -228,7 +231,7 @@
     margin: 7px;
     width: 34%5;
     height: 100%;
-    border-radius: 10px;
+    border-radius: 20px;
     box-shadow: 0 0 10px #7e25ba, 0 0 10px #010003;
   }
 
@@ -416,15 +419,30 @@
   margin-left: 40px;
   width: 450px;
   font-size: 0.8rem;
+   margin-right: 5px;
 }
 
 .form-control{
-  height: 30px;
+  margin-right: 5px;
   border-radius: 10px;
 }
+.offcanvas{
+  background-color: #200043;
+  color: aliceblue;
+}
 
+.navbar-toggler-icon {
+  border: none; 
+ color: aliceblue;
+}
 
- button{
+.navbar-toggler{
+ color: aliceblue;
+ background-color: antiquewhite;
+ margin-right: 5px;
+}
+
+ .form-group button{
   display: inline-block;
   height: 30px;
   width: 80px;
@@ -441,7 +459,7 @@
   border: 0;
 }
 
-button:hover {
+.form-group button:hover {
   background: aliceblue;
   color: #3E239D;
 }
@@ -471,3 +489,38 @@ button:hover {
   transform: translateY(0);
   opacity: 1;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Untuk menengahkan brand dan menjaga toggle tetap di kanan */
+
+
+
+.img-profil img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+
+
+
+
+
+
+
+
+
