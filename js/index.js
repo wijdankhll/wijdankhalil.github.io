@@ -20,7 +20,7 @@ $('.nav-link').on('click', function (e) {
 
   // Scroll ke posisi elemen dikurangi tinggi navbar
   $('html, body').animate({
-    scrollTop: elementTarget.offset().top - navbarHeight - 20
+    scrollTop: elementTarget.offset().top - navbarHeight - 40
   }, 500, 'swing');
 });
 
