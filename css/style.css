@@ -1,14 +1,21 @@
 :root{
-  --base-color: #1A0E24;
+  --base-color: rgba(26, 14, 36, 0.9);
+  --base-color2: #21152D;
   --base-variant: aliceblue;
   --base-variant2: rgba(240, 248, 255, 0.2);
   --text-color : aliceblue;
   --text-color2 : #1A0E24;
 }
-
+body{
+  color: var(--text-color);
+}
+header{
+  color: var(--text-color);
+}
 
 .darkmode{
-  --base-color: aliceblue;
+  --base-color: rgb(240, 248, 255, 0.7);
+  --base-color2: #D0C3EA;
   --base-variant: #1A0E24;
   --base-variant2: rgba(26, 14, 36, 0.2);
   --text-color : #1A0E24;
@@ -94,7 +101,7 @@ body {
  #navbar.sticky {
   z-index: 999;
   position: fixed;
-  background-color: var(--base-color);
+  background-color: var(--base-color2);
   top: 0; /* ketika discroll, pindah ke atas */
  }
 
@@ -108,6 +115,8 @@ body {
     width: 100%;
     height: auto;
     background-color: var(--base-color);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(12px);
     border-radius: 40px;
     border-bottom-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -208,7 +217,7 @@ body {
   mix-blend-mode: normal;
   filter: none;
   box-shadow: 0 0 10px #7e25ba, 0 0 10px #010003;
-  filter: brightness(130%);
+  filter: brightness(110%);
 }
 
 /* Default: tersembunyi sebelum di-scroll */
@@ -315,7 +324,7 @@ body {
   margin-top: 150px;
   margin-bottom: 40px;
   margin-left: 39.5%;
-  background-color: var( --base-variant);
+  background-color: var( --base-variant2);
   border-radius: 10px;
   width: 300px;
 }
