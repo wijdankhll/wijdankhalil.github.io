@@ -731,7 +731,7 @@ body {
     padding-right: 10px;
   }
 
-  .form-group{
+  .form-group, .info{
     max-width: 350px;
     width: auto;
     margin-right: 16px;
