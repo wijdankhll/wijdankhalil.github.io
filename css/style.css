@@ -92,6 +92,7 @@ body {
   font-size: 4rem;
   margin-top: 5px;
   max-width: 50%;
+  width: auto;
  }
  .navbar-brand:hover{
   color: var(--text-color);
@@ -441,7 +442,7 @@ body {
 /* ----Contact----- */
 .contact{
   height: auto;
-  width: 350;
+  width: 100%;
   margin: 0px;
   border-radius: 10px;
   background-color: rgba(211, 183, 242, 0.1);
@@ -585,13 +586,161 @@ body {
   margin-right: 50px;
   margin-top: 0px;
 }
+@media (max-width: 992px) {
+
+  .navbar {
+    width: 95%;
+    margin-left: 2.5%;
+    padding-left: 20px;
+  }
+
+  .navbar-brand {
+    font-size: 2.5rem;
+  }
+
+  .text1,
+  .text2 {
+    font-size: 3rem;
+  }
+
+  .btn-download {
+    width: 40%;
+    margin-left: 0;
+  }
+
+  .skills .row .col-sm-4 {
+    width: 45%;
+  }
+
+}
+
+
+@media (max-width: 768px) {
+  body{
+    padding: 0px;
+  }
+  
+
+  .container{
+    margin-right: 0%;
+    margin-top: 5%;
+ }
+
+ .navbar {
+  width: 100%;
+  margin: 0;
+  padding: 0 16px;
+}
+
+
+  .navbar{
+    padding: 0px;
+  }
+  #navbar.sticky {
+    margin: 0px;
+    margin-right: 0px;
+    width: 100%;
+    max-width: none;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .navbar-brand {
+    font-size: 1.8rem;
+    margin-left: 0px;
+    margin-left: 16px;
+  }
+
+  .navbar-toggler{
+    margin-right: -10px;
+  } 
+
+  .img-profil img {
+    margin: 100px auto;
+    margin-bottom: 20px;
+  }
+  .intro {
+    margin: 20px auto;
+    font-size: smaller;
+  }
+
+  p {
+    padding-right: 0;
+  }
+
+  .btn-download {
+    width: 80%;
+    margin-left: 0;
+  }
+
+  .media{
+    margin: 10px auto;
+  }
+
+  .form-group {
+    width: 100%;
+    max-width: 450px;
+  }
+
+  .text1,
+  .text2 {
+    font-size: 2rem;
+    margin-left: 0;
+  }
+
+  .logo1,
+  .logo2 {
+    margin: 20px auto;
+  }
+
+  /* SKILL */
+
+  
+
+  .skills .row .col-sm-4{
+    
+   
+    width: auto;
+    min-width: 70%;
+    height: 400px;
+    
+   
+  }
+
+ 
+  /* Project */
+  
+
+
+
+  .animasi, .logo1, .logo2{
+    margin: 20px auto;
+  }
+
+  .animasi{
+    margin-top: 200px;
+  }
 
 
 
 
+  /* Contact */
+  .contact{
+    width: auto;
+    padding-left: 0px;
+    padding-right: 10px;
+  }
 
+  .form-group{
+    max-width: 350px;
+  }
+  .cont{
+    margin: 20px auto;
+  }
 
+ 
 
-
-
-
+  html, body {
+    overflow-x: hidden;
+  }
+}
