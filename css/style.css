@@ -733,6 +733,8 @@ body {
 
   .form-group{
     max-width: 350px;
+    width: auto;
+    margin-right: 16px;
   }
   .cont{
     margin: 20px auto;
